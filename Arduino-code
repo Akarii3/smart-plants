@@ -1,0 +1,43 @@
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+const int AirValue = 453;
+const int WaterValue = 200;
+int soilMoistureValue = 0;
+int soilmoisturepercent = 0;
+
+void setup() {
+ Serial.begin(9600);
+ lcd.begin(16, 2);
+ lcd.backlight();
+ delay(500);  
+}
+
+void loop() {
+ soilMoistureValue = analogRead(A0);
+ Serial.print("Raw Value: ");
+ Serial.println(soilMoistureValue);
+
+ soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
+
+ // Display logic
+ lcd.setCursor(0, 0);
+ lcd.print("Soil Moisture:");
+ lcd.setCursor(0, 1);
+  if (soilmoisturepercent >= 100) {
+   lcd.print("100%  ");
+   Serial.println("100%");
+ }
+ else if (soilmoisturepercent <= 0) {
+   lcd.print("0%    ");
+   Serial.println("0%");
+ }
+ else {
+   lcd.print(soilmoisturepercent);
+   lcd.print("%   ");
+   Serial.print(soilmoisturepercent);
+   Serial.println("%");
+ }
+
+ delay(1000); // Update every 1 second
+}
