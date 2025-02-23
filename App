@@ -24,96 +24,60 @@ output_details = interpreter.get_output_details()
 
 # Plant details dictionary
 plant_details = {
- "Alstonia Scholaris diseased": {
-        "description": "Scientific name: Alstonia scholaris, Family: Apocynaceae. This tree is known for its tall, evergreen nature, but when diseased, it shows yellowing of leaves and wilting due to fungal infections.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil, but does not tolerate waterlogged conditions."
+    "Healthy Aglaonema": {
+        "description": "Scientific name: Aglaonema. Known for its attractive variegated leaves, this plant has vibrant green leaves with silver or white streaks. It thrives in low to medium light and tolerates some neglect.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly acidic soil. Avoid waterlogging."
     },
-    "Alstonia Scholaris healthy": {
-        "description": "Scientific name: Alstonia scholaris, Family: Apocynaceae. Commonly known as the 'Devil Tree,' this tree is revered for its medicinal properties, with glossy, dark green leaves.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers moist, well-drained soil but tolerates dry periods."
+    "Unhealthy Aglaonema": {
+        "description": "Unhealthy Aglaonema shows signs of yellowing or browning of leaves, particularly around the edges, and wilting due to overwatering or underwatering.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Overwatering or poor drainage can lead to root rot."
     },
-    "Arjun diseased": {
-        "description": "Scientific name: Terminalia arjuna, Family: Combretaceae. The tree's bark is used in medicine, but when diseased, it can show browning of leaves and irregular growth due to pest infestation.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers moist, well-drained soil, and can tolerate seasonal droughts."
+    "Healthy Aloe Vera": {
+        "description": "Scientific name: Aloe vera. A succulent with thick, fleshy, spiky leaves that are green to gray-green. Known for its medicinal properties, it thrives in full sun and requires minimal care.",
+        "soil_moisture_range": "Low moisture (10% - 30%). Prefers well-drained, sandy or loamy soil. Avoid waterlogging."
     },
-    "Arjun healthy": {
-        "description": "Scientific name: Terminalia arjuna, Family: Combretaceae. Known for its heart-shaped leaves and white flowers, this tree is used for heart health in traditional medicine.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers moist, well-drained soil."
+    "Unhealthy Aloe Vera": {
+        "description": "Unhealthy Aloe vera may show wrinkled, discolored, or drooping leaves, usually due to under-watering or root rot from over-watering.",
+        "soil_moisture_range": "Low moisture (10% - 30%). Ensure soil drains well to avoid root rot from excess moisture."
     },
-    "Bael diseased": {
-        "description": "Scientific name: Aegle marmelos, Family: Rutaceae. Bael trees affected by fungal or bacterial infections can have spotted leaves and decreased fruit production.",
-        "soil_moisture_range": "Low to moderate moisture (20% - 50%). Prefers well-drained soil and can tolerate dry conditions."
+    "Healthy Arrowhead": {
+        "description": "Scientific name: Syngonium podophyllum. An ornamental plant with arrow-shaped leaves that thrive in moderate light. Healthy plants have vibrant, firm green leaves.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, lightly moist soil. Keep soil consistently moist but not waterlogged."
     },
-    "Basil healthy": {
-        "description": "Scientific name: Ocimum basilicum, Family: Lamiaceae. A fragrant herb commonly used in cooking, it has broad, aromatic leaves and is also known for its medicinal uses, especially in Ayurveda.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers slightly moist, well-drained soil."
+    "Unhealthy Arrowhead": {
+        "description": "Unhealthy Arrowhead plants may have yellowing leaves, brown leaf tips, or wilting due to inconsistent watering or lack of sunlight.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Ensure consistent watering and avoid drying out between waterings."
     },
-    "Chinar diseased": {
-        "description": "Scientific name: Platanus orientalis, Family: Platanaceae. Diseased Chinar trees might show signs of leaf spots, peeling bark, and stunted growth caused by environmental stress or fungal infections.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers moist, well-drained soil."
+    "Healthy Arrowroot": {
+        "description": "Scientific name: Maranta arundinacea. Known for its oval leaves with dark green and red veins, Arrowroot thrives in moderate light. Healthy plants have smooth, vibrant leaves.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly moist soil. Keep soil evenly moist."
     },
-    "Chinar healthy": {
-        "description": "Scientific name: Platanus orientalis, Family: Platanaceae. Known for its broad, large leaves and distinctive bark, this tree is a symbol of resilience and is found mostly in temperate climates.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers moist, well-drained soil."
+    "Healthy Butterfly Pea": {
+        "description": "Scientific name: Clitoria ternatea. Known for its vibrant blue flowers, this climbing plant grows best in full sun. Healthy plants produce lush green foliage and abundant flowers.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil and should be watered consistently. Avoid waterlogging."
     },
-    "Gauva diseased": {
-        "description": "Scientific name: Psidium guajava, Family: Myrtaceae. Diseased guava trees may exhibit yellowing of leaves, fruit rot, or early leaf drop due to fungal infections or pests.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil but should not be overwatered."
+    "Healthy Golden Pothos": {
+        "description": "Scientific name: Epipremnum aureum. Known for its heart-shaped, glossy leaves with green and yellow variegation. It thrives in low to moderate light.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly moist soil. Avoid soggy soil."
     },
-    "Gauva healthy": {
-        "description": "Scientific name: Psidium guajava, Family: Myrtaceae. Known for its sweet, tangy fruit, the guava tree has smooth green leaves and is prized for its high Vitamin C content.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly acidic soil."
+    "Healthy Snake Plant": {
+        "description": "Scientific name: Sansevieria trifasciata. Known for its upright, sword-shaped leaves with green and light green stripes. Very tolerant of neglect and low light.",
+        "soil_moisture_range": "Low moisture (10% - 30%). Prefers well-drained, sandy soil. Avoid overwatering to prevent root rot."
     },
-    "Jamun diseased": {
-        "description": "Scientific name: Syzygium cumini, Family: Myrtaceae. The Jamun tree can suffer from leaf curl, fruit drop, and rot if affected by fungal infections or environmental stress.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly acidic soil."
+    "Unhealthy Snake Plant": {
+        "description": "Unhealthy Snake Plants may have yellowing or soft leaves due to overwatering or insufficient light.",
+        "soil_moisture_range": "Low moisture (10% - 30%). Ensure good drainage to avoid root rot from overwatering."
     },
-    "Jamun healthy": {
-        "description": "Scientific name: Syzygium cumini, Family: Myrtaceae. This evergreen tree is known for its dark purple fruits with a sweet-sour taste, often used to treat diabetes in traditional medicine.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil with a slightly acidic pH."
+    "Healthy Swiss Cheese Plant": {
+        "description": "Scientific name: Monstera adansonii. Known for its large, glossy leaves with holes (fenestrations), it grows well when supported by a trellis. Healthy plants have lush, dark green foliage.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-draining, slightly moist soil. Avoid letting the soil dry out completely."
     },
-    "Jatropha diseased": {
-        "description": "Scientific name: Jatropha curcas, Family: Euphorbiaceae. Diseased Jatropha plants show leaf spotting and wilting due to fungal diseases or insect infestations.",
-        "soil_moisture_range": "Low to moderate moisture (20% - 50%). Prefers well-drained soil and can tolerate dry conditions."
-    },
-    "Jatropha healthy": {
-        "description": "Scientific name: Jatropha curcas, Family: Euphorbiaceae. Known for its drought tolerance, Jatropha is used as a biofuel plant and has small, bright green leaves and yellow flowers.",
-        "soil_moisture_range": "Low moisture (10% - 40%). Prefers dry, well-drained soils."
-    },
-    "Lemon diseased": {
-        "description": "Scientific name: Citrus limon, Family: Rutaceae. Diseased lemon trees may suffer from yellowing leaves, spots, or root rot due to fungal infections or poor soil drainage.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly acidic soil."
-    },
-    "Lemon healthy": {
-        "description": "Scientific name: Citrus limon, Family: Rutaceae. Known for its sour, tangy fruit, lemon trees have bright green leaves and fragrant white flowers, and are commonly used in culinary and medicinal applications.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil with good drainage to avoid waterlogging."
-    },
-    "Mango diseased": {
-        "description": "Scientific name: Mangifera indica, Family: Anacardiaceae. Mango trees can show symptoms like leaf spots, premature fruit drop, or blackened branches when affected by fungal or bacterial diseases.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil but does not like standing water."
-    },
-    "Mango healthy": {
-        "description": "Scientific name: Mangifera indica, Family: Anacardiaceae. A tropical tree known for its sweet, delicious fruits, mango trees have large, glossy leaves and can grow quite tall in tropical climates.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers slightly acidic, well-drained soil."
-    },
-    "Pomegranate diseased": {
-        "description": "Scientific name: Punica granatum, Family: Lythraceae. Pomegranate trees affected by disease show signs like wilted leaves, fruit rot, or fungal growth on branches.",
-        "soil_moisture_range": "Low moisture (20% - 40%). Prefers dry, well-drained soil."
-    },
-    "Pomegranate healthy": {
-        "description": "Scientific name: Punica granatum, Family: Lythraceae. Known for its bright red fruits with jewel-like seeds, the pomegranate tree has glossy, leathery leaves and beautiful red flowers.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil but can tolerate dry conditions."
-    },
-    "Pongamia Pinnata diseased": {
-        "description": "Scientific name: Pongamia pinnata, Family: Fabaceae. Diseased Pongamia trees can show leaf discoloration and poor flowering due to insect infestations or root diseases.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained, slightly alkaline soil."
-    },
-    "Pongamia Pinnata healthy": {
-        "description": "Scientific name: Pongamia pinnata, Family: Fabaceae. Known for its oil-rich seeds, Pongamia Pinnata is a medium-sized tree used for reforestation, with compound leaves and fragrant white flowers.",
-        "soil_moisture_range": "Moderate moisture (40% - 60%). Prefers well-drained soil and can tolerate dry conditions."
-    },
-    # Add more plants here...
+    "Unhealthy Swiss Cheese Plant": {
+        "description": "Unhealthy Swiss Cheese Plants may have yellowing leaves, poor growth, or browning edges due to improper lighting, watering, or pests.",
+        "soil_moisture_range": "Moderate moisture (40% - 60%). Ensure even moisture and avoid excess moisture or drying out."
+    }
 }
+
 
 class Smart_PlantsApp(App):
     def build(self):
@@ -177,13 +141,11 @@ class Smart_PlantsApp(App):
         predicted_class = np.argmax(output_data, axis=1)
 
         # Map the predicted class to the actual class names (update with your actual class names)
-        class_names = ['Alstonia Scholaris diseased', 'Alstonia Scholaris healthy', 'Arjun diseased', 
-			   'Arjun healthy', 'Bael diseased', 'Basil healthy', 'Chinar diseased', 
-			   'Chinar healthy', 'Gauva diseased', 'Gauva healthy', 'Jamun diseased', 
-			   'Jamun healthy', 'Jatropha diseased', 'Jatropha healthy', 
-			   'Lemon diseased', 'Lemon healthy', 'Mango diseased', 'Mango healthy', 'Pomegranate diseased', 
-			   'Pomegranate healthy', 'Pongamia Pinnata diseased', 
-			   'Pongamia Pinnata healthy']
+        class_names = ['Healthy Aglaonema', 'Healthy Aloe vera', 'Healthy Arrowhead', 
+			   'Healthy Arrowroot', 'Healthy Butterfly pea', 'Healthy Golden Pothos',  
+			   'Healthy Snake plant', 'Healthy Swiss cheese plant', 'Unhealthy Aglaonema',  
+			   'Unhealthy Aloe Vera', 'Unhealthy Arrowhead', 'Unhealthy Snake Plant', 
+			   'Unhealthy Swiss cheese plant']
         
         predicted_label = class_names[predicted_class[0]]
         print(f"Predicted class: {predicted_label}")
